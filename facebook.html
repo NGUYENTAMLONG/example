@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: tahoma;
+        }
+        body{
+            height: 2000px;
+        }
+         header{
+             width: 100%;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             flex-direction: column;
+             padding: 30px 200px;
+         }
+         header h1{
+             margin-bottom: 20px;
+             position: relative;
+         }
+         header h1::after{
+             content: "";
+             position: absolute;
+             width: 40%;
+             background-color: red;
+             height: 8px;
+             bottom: -15px;
+             margin-left: auto;
+                margin-right: auto;
+                left: 0;
+                right: 0;
+         }
+         .container{
+             background-image: url('https://wallpaperaccess.com/full/253484.jpg');
+             background-size: cover;
+         height: 400px;
+         width: 100%;
+         background-attachment: fixed ;
+         position: relative;
+         
+        
+        }
+        .middle{
+            position: absolute; 
+            left: 0; 
+            right: 0; 
+            margin-left: auto; 
+            margin-right: auto; 
+                width: 650px; 
+              height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+        }
+        .bg-left{
+            position: absolute;
+            z-index: 0;
+            height: 90%;
+            width: 325px;
+            left: 0;
+            transition: .7s;
+        }
+        .left{
+             position: absolute;
+              top:calc(40%/2);
+             height: 60%;
+             width: 100%;
+             overflow: hidden;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             flex-direction: column;
+             color: white;
+             transition: .7s;
+             padding: 80px 10px 0px;
+             z-index: 1;
+             
+        
+        }
+        .left i{
+            font-size: 160px;
+            transition: .7s;
+            margin-bottom: 17px;
+        }
+        .left .title{
+              margin-bottom: 20px;
+        }
+        .bg-right{
+            position: absolute;
+            z-index: 0;
+            height: 90%;
+            width: 325px;
+            right: 0;
+            transition: .7s;
+        }
+        .right{
+             position: absolute;
+            top:calc(40%/2);
+            height: 60%;
+            width: 100%;
+             overflow: hidden;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             flex-direction: column;
+             color: white;
+             transition: .7s;
+             padding: 60px 10px 0px;
+             z-index: 1;
+        }
+        .right i{
+            font-size: 160px;
+            transition: .7s;
+            margin-bottom: 17px;
+        }
+        .right .title{
+              margin-bottom: 20px;
+        }
+        .bg-left:hover i{
+            font-size: 70px;
+            margin-top: -100px;
+        }
+        .bg-left:hover{
+            background-color: rgba(128, 128, 128, 0.438);
+
+        }
+        .bg-right:hover i{
+            font-size: 70px;
+            margin-top: -100px;
+        }
+        .bg-right:hover{
+            background-color: rgba(128, 128, 128, 0.438);
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Header</h1>
+       
+        <p>Được dịch từ tiếng Anh-Trong công nghệ thông tin, tiêu đề đề cập đến dữ liệu bổ sung được đặt ở đầu một khối dữ liệu được lưu trữ hoặc truyền đi. Trong truyền dữ liệu, dữ liệu theo tiêu đề đôi khi được gọi là tải trọng hoặc phần thân</p>
+    </header>
+    <div class="container">
+        <div class="middle">
+            <div class="bg-left">
+                <div class="left">
+                    <i class="fa fa-grav" style="color: white;" aria-hidden="true"></i>
+                      <div class="title">
+                            <h2>
+                                KHÔNG GIAN
+                            </h2>
+                      </div>
+                      <div class="description">
+                            <p>
+                                Không gian là một mở rộng ba chiều không biên giới trong đó các vật thể và sự kiện có vị trí và hướng tương đối với nhau.
+                            </p>
+                      </div>
+            </div>
+        </div>
+        <div class="bg-right">
+            <div class="right">
+                <i class="fa fa-bandcamp" style="color: white;" aria-hidden="true"></i>
+                <div class="title">
+                    <h2>
+                        LA BÀN
+                    </h2>
+                </div>
+                <div class="description">
+                    <p>
+                        La bàn là dụng cụ dùng để xác định phương hướng trong không gian nhất định                    </p>
+    
+                </div>
+            </div>
+           </div>
+        </div>
+    </div>
+    
+</body>
+</html>
